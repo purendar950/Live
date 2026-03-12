@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/float_card_bg"
+    android:padding="16dp"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:elevation="16dp">
+
+    <!-- Header row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <!-- Chapter badge -->
+        <TextView
+            android:id="@+id/tvChapter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="📚 Ch.1 — Overview"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:textColor="#A78BFA"
+            android:background="@drawable/badge_bg"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp" />
+
+        <!-- Timer -->
+        <TextView
+            android:id="@+id/tvTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⏱ 15"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#A78BFA"
+            android:layout_marginStart="8dp" />
+
+        <!-- Close button -->
+        <ImageButton
+            android:id="@+id/btnClose"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:background="@android:color/transparent"
+            android:tint="#8899BB"
+            android:layout_marginStart="6dp" />
+
+    </LinearLayout>
+
+    <!-- Q number row -->
+    <TextView
+        android:id="@+id/tvQNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Q1 of 100  •  Score: 0✓"
+        android:textSize="11sp"
+        android:textColor="#8899BB"
+        android:layout_marginBottom="6dp" />
+
+    <!-- Question text -->
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question loading..."
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#F0F4FF"
+        android:lineSpacingMultiplier="1.4"
+        android:layout_marginBottom="6dp" />
+
+    <!-- Hindi text -->
+    <TextView
+        android:id="@+id/tvHindi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="13sp"
+        android:textColor="#8899BB"
+        android:lineSpacingMultiplier="1.4"
+        android:visibility="gone"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Options container -->
+    <LinearLayout
+        android:id="@+id/optContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Explanation (shown after reveal) -->
+    <TextView
+        android:id="@+id/tvExp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="12sp"
+        android:textColor="#8899BB"
+        android:lineSpacingMultiplier="1.4"
+        android:visibility="gone"
+        android:background="@drawable/exp_bg"
+        android:padding="12dp" />
+
+</LinearLayout>
